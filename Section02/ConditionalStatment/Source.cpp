@@ -4,7 +4,7 @@ int main()
 {
 	int i = 0;
 
-	std::cout << "Please enter a number  ";
+	std::cout << "Please enter a number ";
 	std::cin >> i;
 
 	if (i > 0)
