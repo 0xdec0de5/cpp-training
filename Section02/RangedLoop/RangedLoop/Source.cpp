@@ -1,0 +1,13 @@
+#include <iostream>
+#include <string>
+
+int main()
+{
+	auto list = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+	for (auto n : list)
+	{
+		std::cout << "#" << std::to_string(n) << std::endl;
+	}
+
+	return 0;
+}
