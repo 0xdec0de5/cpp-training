@@ -1,29 +1,20 @@
 #include <iostream>
-#include<vector>
 
 int main()
 {
-	// Given a container of ints
-	std::vector<int> v = { 9, 4, 13, 55, 32, 64, 98, -1, 0, 18 };
+	auto A = true;
+	auto B = false;
+	auto C = true;
+	auto D = false;
 
-	// User defined number to find
-	auto number_to_find = 0;
-
-	std::cout << "Given 9, 4, 13, 55, 32, 64, 98, -1, 0, 18 "
-		<< "enter the number you want to find the index of: ";
-	std::cin >> number_to_find;
-
-	// Find the index of number_to_find
-	auto i = 0u;
-	for (auto n : v)
-	{
-		if (n == number_to_find)
-		{
-			std::cout << "The index of " << number_to_find << " is " << i;
-			break;
-		}
-		i++;
-	}
+	std::cout << std::boolalpha;
+	std::cout << "B || D || A = " << ( B || D || A ) << std::endl;
+	std::cout << "A && C && D = "<< ( A && C && D ) << std::endl;
+	std::cout << "!A || B || D || !C = " << ( !A || B || D || !C ) << std::endl;
+	std::cout << "!(A || B || C || D) = " << ( !(A || B || C || D) ) << std::endl;
+	std::cout << "A && !B && C && !D = " << ( A && !B && C && !D ) << std::endl;
+	std::cout << "(!(A && B) && !(D || !A)) = " << ( (!(A && B) && !(D || !A)) ) << std::endl;
+	std::cout << "!((B || (B || (!C))) && !D) = " << ( !((B || (B || (!C))) && !D) ) << std::endl;
 
 	return 0;
 }
