@@ -22,7 +22,6 @@ int main()
 		? std::cout << "The player slays the dragon"
 		: std::cout << "The player misses and is killed by the dragon";
 
-
 	// Exact same outcome but using the if-else statement
 	/*
 		if (die_roll <= player_accuracy)

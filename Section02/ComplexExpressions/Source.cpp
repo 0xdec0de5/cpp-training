@@ -28,7 +28,7 @@ int main()
 	bool is_restart_condition = (player_hitpoints <= 0 && player_lives != 0);
 	std::cout << "Player restarts\t" << is_restart_condition << std::endl;
 
-	bool is_game_active = (player_hitpoints > 0 && player_lives != 0 || elapsed_time < time_limit);
+	bool is_game_active = (player_hitpoints > 0 && player_lives != 0 && elapsed_time < time_limit);
 	std::cout << "Still playing\t" << is_game_active << std::endl;
 
 	bool can_attack = (player_hitpoints > 0 && enemy_hitpoints > 0 && distance <= sword_length);

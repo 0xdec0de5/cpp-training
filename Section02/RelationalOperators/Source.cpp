@@ -1,9 +1,10 @@
 #include <iostream>
 
+
 int main()
 {
 	// Set output stream to friendly print booleans
-	std::cout.setf(std::ios_base::boolalpha);
+	std::cout << std::boolalpha;
 
 	int player_str{};
 	int enemy_str{};

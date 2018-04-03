@@ -24,5 +24,6 @@ int main()
 		std::cout << "You are almost ready to retire!";
 	}
 
+
 	return 0;
 }
